@@ -1,0 +1,171 @@
+/* Styles for the body */
+body {
+  font-family: "Outfit", sans-serif; /* Sets the font for the entire body */
+  background-image: url(../imagens/fundo-site.png); /* Sets the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-size: cover; /* Ensures the background image covers the entire viewport */
+  min-height: 100vh; /* Sets the minimum height to 100% of the viewport height */
+}
+
+/* Header styles */
+.cabecalho {
+  display: flex; /* Uses flexbox for layout */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  gap: 15px; /* Adds space between items */
+  padding-top: 50px; /* Adds padding at the top */
+}
+
+/* Title styles within the header */
+.cabecalho .titulo {
+  color: #f1ecff; /* Sets the color for the title text */
+}
+
+/* Styles for the Pokébola image in the header */
+.cabecalho .pokebola {
+  width: 25px; /* Sets the width of the Pokébola image */
+  height: 25px; /* Sets the height of the Pokébola image */
+}
+
+/* Styles for the Pokémon slider */
+.pokemon-slider {
+  display: flex; /* Uses flexbox for layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  gap: 80px; /* Adds space between items */
+  margin: 60px 0; /* Adds margin above and below the slider */
+}
+
+/* Styles for the Pokémon list */
+.lista-pokemons {
+  width: 310px; /* Sets the width of the Pokémon list */
+  height: 520px; /* Sets the height of the Pokémon list */
+  position: relative; /* Allows absolute positioning of child elements */
+}
+
+/* Styles for buttons */
+.btn-seta {
+  background-color: #fff; /* Sets the button background color to white */
+  width: 70px; /* Sets the width of the button */
+  height: 70px; /* Sets the height of the button */
+  border-radius: 50px; /* Makes the button circular */
+  border: 0; /* Removes the button border */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.2s ease-in-out; /* Adds a transition effect for background color */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* Adds a shadow effect to the button */
+}
+
+/* Button styles for the back button */
+.btn-seta.btn-voltar {
+  transform: rotateY(180deg); /* Flips the button horizontally */
+}
+
+/* Hover effect for buttons */
+.btn-seta:hover {
+  background-color: #8351fe; /* Changes background color on hover */
+}
+
+/* Styles for Pokémon cards */
+.cartao {
+  opacity: 0; /* Sets initial opacity to 0 for fade-in effect */
+  background-color: blueviolet; /* Sets the background color of the card */
+  height: 100%; /* Sets the height of the card */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Arranges items vertically */
+  justify-content: space-between; /* Adds space between items */
+  position: absolute; /* Allows the card to overlap others */
+  padding: 12px; /* Adds padding inside the card */
+  border-radius: 10px; /* Rounds the corners of the card */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* Adds a shadow effect to the card */
+  transition: opacity 0.3s ease-in-out; /* Adds a transition effect for opacity */
+}
+
+/* Styles for the selected card */
+.cartao.selecionado {
+  opacity: 1; /* Sets opacity to 1 for visible cards */
+  z-index: 1; /* Ensures the selected card appears on top */
+}
+
+/* Background styles for different cards */
+.fundo-1 {
+  background: url(../imagens/fundo-card-1.jpg) no-repeat; /* Sets the background for card 1 */
+}
+
+.fundo-2 {
+  background: url(../imagens/fundo-card-2.jpg) no-repeat; /* Sets the background for card 2 */
+}
+
+.fundo-3 {
+  background: url(../imagens/fundo-card-3.jpg) no-repeat; /* Sets the background for card 3 */
+}
+
+/* Styles for information section within the card */
+.cartao .informacoes {
+  background-color: rgba(
+    179,
+    177,
+    185,
+    0.7
+  ); /* Sets a semi-transparent background */
+  display: flex; /* Uses flexbox for layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Spaces items evenly */
+  padding: 8px 10px; /* Adds padding inside the info section */
+  border-top-left-radius: 10px; /* Rounds the top left corner */
+  border-top-right-radius: 10px; /* Rounds the top right corner */
+}
+
+/* Styles for Pokémon name */
+.cartao .informacoes .nome {
+  color: #f1ecff; /* Sets the color of the name */
+  font-size: 22px; /* Sets the font size of the name */
+}
+
+/* Styles for Pokémon HP */
+.cartao .informacoes .vida {
+  background-color: #333; /* Sets the background color for HP */
+  color: #f1ecff; /* Sets the text color for HP */
+  padding: 6px 10px; /* Adds padding inside the HP section */
+  border-radius: 20px; /* Rounds the corners of the HP section */
+}
+
+/* Styles for the image container */
+.cartao .container-imagem {
+  text-align: center; /* Centers the image horizontally */
+}
+
+/* Styles for Pokémon image */
+.cartao .imagem-pokemon {
+  max-width: 100%; /* Ensures the image does not exceed the card's width */
+  max-height: 280px; /* Sets a maximum height for the image */
+  padding: 20px; /* Adds padding around the image */
+}
+
+/* Styles for the description section within the card */
+.cartao .descricao {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Sets a semi-transparent white background */
+  border-bottom-left-radius: 10px; /* Rounds the bottom left corner */
+  border-bottom-right-radius: 10px; /* Rounds the bottom right corner */
+}
+
+/* Styles for the description title */
+.cartao .descricao .titulo {
+  background-color: #333; /* Sets the background color for the title */
+  color: #f1ecff; /* Sets the text color for the title */
+  font-size: 15px; /* Sets the font size for the title */
+  padding: 12px; /* Adds padding inside the title section */
+}
+
+/* Styles for the description text */
+.cartao .descricao .texto {
+  font-size: 14px; /* Sets the font size for the description text */
+  padding: 12px; /* Adds padding inside the text section */
+  text-align: justify; /* Justifies the text alignment */
+  max-height: 115px; /* Sets a maximum height for the text */
+  overflow-y: auto; /* Enables vertical scrolling if the text exceeds max height */
+}

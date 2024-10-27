@@ -1,0 +1,38 @@
+@media (max-width: 620px) {
+  /* Adjusts padding and gap for the Pokemon slider */
+  .pokemon-slider {
+    padding: 0 15px;
+    gap: 10px;
+  }
+
+  /* Styles for navigation buttons */
+  .btn-seta {
+    width: 20px; /* Sets the width of the button */
+    height: 20px; /* Sets the height of the button */
+    padding: 20px; /* Adds padding around the button */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+  }
+
+  /* Sets the height of the Pokemon list */
+  .lista-pokemons {
+    height: 480px; /* Sets a fixed height for the Pokemon list */
+  }
+
+  /* Styles for the Pokemon image within the card */
+  .cartao .imagem-pokemon {
+    max-height: 230px; /* Limits the maximum height of the Pokemon image */
+  }
+
+  /* Styles for the name inside the information section of the card */
+  .cartao .informacoes .nome {
+    max-width: 50%; /* Sets a maximum width for the name */
+    font-size: 18px; /* Adjusts font size */
+  }
+
+  /* Styles for the life points text inside the information section of the card */
+  .cartao .informacoes .vida {
+    font-size: 14px; /* Adjusts font size */
+  }
+}
